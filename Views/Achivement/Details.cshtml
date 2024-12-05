@@ -1,0 +1,11 @@
+@model EFitness.Models.Achievement
+
+<h2>Achievement Details</h2>
+
+<div>
+    <p><strong>Member:</strong> @Model.Member.FullName</p>
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Date Achieved:</strong> @Model.DateAchieved.ToString("d")</p>
+</div>
+
+<a asp-action="Index">Back to List</a>
