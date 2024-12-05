@@ -1,13 +1,14 @@
 @model IEnumerable<EFitness.Models.Activity1>
 
-<h2>Activities</h2>
-<table>
+<h2>Aktivnosti</h2>
+
+<table class="table table-striped">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Schedule</th>
-            <th>Actions</th>
+            <th>Ime aktivnosti</th>
+            <th>Opis</th>
+            <th>Urnik</th>
+            <th>Akcije</th>
         </tr>
     </thead>
     <tbody>
@@ -16,14 +17,15 @@
             <tr>
                 <td>@activity.Name</td>
                 <td>@activity.Description</td>
-                <td>@activity.Schedule.ToString("g")</td>
+                <td>@activity.Schedule</td>
                 <td>
-                    <a asp-controller="Activity1" asp-action="Details" asp-route-id="@activity.Id">Details</a> |
-                    <a asp-controller="Activity1" asp-action="Edit" asp-route-id="@activity.Id">Edit</a> |
-                    <a asp-controller="Activity1" asp-action="Delete" asp-route-id="@activity.Id">Delete</a>
+                    <a asp-controller="Activities" asp-action="Details" asp-route-id="@activity.Id" class="btn btn-info btn-sm">Podrobnosti</a>
+                    <a asp-controller="Activities" asp-action="Edit" asp-route-id="@activity.Id" class="btn btn-warning btn-sm">Uredi</a>
+                    <a asp-controller="Activities" asp-action="Delete" asp-route-id="@activity.Id" class="btn btn-danger btn-sm">Izbriši</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-<a asp-controller="Activity1" asp-action="Create">Add New Activity</a>
+
+<a asp-controller="Activities" asp-action="Create" class="btn btn-primary">Dodaj novo aktivnost</a>

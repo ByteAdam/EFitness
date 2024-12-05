@@ -1,25 +1,34 @@
 @model EFitness.Models.Member
 
-<h2>Edit Member</h2>
+<h2>Uredi podatke člana</h2>
 
-<form asp-action="Edit">
-    <input type="hidden" asp-for="Id" />
-    <div>
-        <label>Full Name</label>
-        <input asp-for="FullName" />
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label asp-for="FullName" class="form-label">Ime in priimek</label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
     </div>
-    <div>
-        <label>Email</label>
-        <input asp-for="Email" />
+
+    <div class="form-group">
+        <label asp-for="Email" class="form-label">E-pošta</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
     </div>
-    <div>
-        <label>Phone</label>
-        <input asp-for="Phone" />
+
+    <div class="form-group">
+        <label asp-for="Phone" class="form-label">Telefon</label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
     </div>
-    <div>
-        <label>Goals</label>
-        <input asp-for="Goals" />
+
+    <div class="form-group">
+        <label asp-for="Goals" class="form-label">Cilji</label>
+        <textarea asp-for="Goals" class="form-control"></textarea>
+        <span asp-validation-for="Goals" class="text-danger"></span>
     </div>
-    <button type="submit">Save</button>
+
+    <button type="submit" class="btn btn-primary">Shrani</button>
+    <a asp-action="Index" class="btn btn-secondary">Prekliči</a>
 </form>
-<a asp-action="Index">Back to List</a>

@@ -1,20 +1,23 @@
 @model EFitness.Models.Reservation
 
-<h2>Create Reservation</h2>
+<h2>Dodaj novo rezervacijo</h2>
 
-<form asp-action="Create">
-    <div>
-        <label>Member</label>
-        <select asp-for="MemberId" asp-items="@(new SelectList(ViewData["Members"] as List<EFitness.Models.Member>, "Id", "FullName"))"></select>
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label asp-for="MemberId">Član</label>
+        <select asp-for="MemberId" asp-items="@(new SelectList(ViewData["Members"] as IEnumerable<EFitness.Models.Member>, "Id", "FullName"))" class="form-control"></select>
     </div>
-    <div>
-        <label>Activity</label>
-        <select asp-for="ActivityId" asp-items="@(new SelectList(ViewData["Activities"] as List<EFitness.Models.Activity1>, "Id", "Name"))"></select>
+    <div class="form-group">
+        <label asp-for="ActivityId">Aktivnost</label>
+        <select asp-for="ActivityId" asp-items="@(new SelectList(ViewData["Activities"] as IEnumerable<EFitness.Models.Activity1>, "Id", "Name"))" class="form-control"></select>
     </div>
-    <div>
-        <label>Date</label>
-        <input asp-for="Date" type="datetime-local" />
+    <div class="form-group">
+        <label asp-for="Date">Datum</label>
+        <input asp-for="Date" class="form-control" type="datetime-local" />
     </div>
-    <button type="submit">Create</button>
+
+    <button type="submit" class="btn btn-primary">Shrani</button>
+    <a asp-action="Index" class="btn btn-secondary">Prekliči</a>
 </form>
-<a asp-action="Index">Back to List</a>

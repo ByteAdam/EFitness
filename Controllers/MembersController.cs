@@ -14,10 +14,11 @@ public class MembersController : Controller
     }
 
     public IActionResult Index()
-    {
-        var members = _context.Members.ToList();
-        return View(members);
-    }
+{
+    var members = _context.Members.ToList();
+    return View(members);
+}
+
 
     public IActionResult Details(int id)
     {

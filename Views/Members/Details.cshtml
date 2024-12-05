@@ -1,12 +1,16 @@
 @model EFitness.Models.Member
 
-<h2>Member Details</h2>
+<h2>Podrobnosti člana</h2>
 
-<div>
-    <p><strong>Full Name:</strong> @Model.FullName</p>
-    <p><strong>Email:</strong> @Model.Email</p>
-    <p><strong>Phone:</strong> @Model.Phone</p>
-    <p><strong>Goals:</strong> @Model.Goals</p>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.FullName</h5>
+        <p class="card-text"><strong>E-pošta:</strong> @Model.Email</p>
+        <p class="card-text"><strong>Telefon:</strong> @Model.Phone</p>
+        <p class="card-text"><strong>Cilji:</strong> @Model.Goals</p>
+    </div>
 </div>
 
-<a asp-action="Index">Back to List</a>
+<a asp-controller="Members" asp-action="Index" class="btn btn-secondary">Nazaj na seznam</a>
+<a asp-controller="Members" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Uredi</a>
+<a asp-controller="Members" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Izbriši</a>

@@ -55,19 +55,32 @@ public IActionResult Index()
     }
 
     [HttpPost]
-    public IActionResult Create(Reservation reservation)
+[ValidateAntiForgeryToken]
+public IActionResult Create(Reservation reservation)
+{
+    // Debugging for ModelState
+    if (!ModelState.IsValid)
     {
-        if (ModelState.IsValid)
+        foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
         {
-            _context.Reservations.Add(reservation);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            Console.WriteLine(error.ErrorMessage);
         }
 
-        ViewData["Activities"] = _context.Activities.ToList(); // Correct DbSet name
+        // Reload dropdowns if ModelState fails
         ViewData["Members"] = _context.Members.ToList();
+        ViewData["Activities"] = _context.Activities.ToList();
         return View(reservation);
     }
+
+    // Log reservation data for debugging
+    Console.WriteLine($"Saving Reservation: MemberId={reservation.MemberId}, ActivityId={reservation.ActivityId}, Date={reservation.Date}");
+
+    // Save to the database
+    _context.Reservations.Add(reservation);
+    _context.SaveChanges();
+
+    return RedirectToAction(nameof(Index));
+}
 
     public IActionResult Edit(int id)
     {

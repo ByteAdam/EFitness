@@ -1,29 +1,29 @@
 @model IEnumerable<EFitness.Models.Reservation>
 
-<h2>Reservations</h2>
-<table>
+<h2>Rezervacije</h2>
+<table class="table">
     <thead>
         <tr>
-            <th>Member</th>
-            <th>Activity</th>
-            <th>Date</th>
-            <th>Actions</th>
+            <th>Član</th>
+            <th>Aktivnost</th>
+            <th>Datum</th>
+            <th>Dejanja</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var reservation in Model)
+        @foreach (var rezervacija in Model)
         {
             <tr>
-                <td>@reservation.Member.FullName</td>
-                <td>@reservation.Activity1.Name</td>
-                <td>@reservation.Date.ToString("g")</td>
+                <td>@rezervacija.Member.FullName</td>
+                <td>@rezervacija.Activity1.Name</td>
+                <td>@rezervacija.Date.ToString("g")</td>
                 <td>
-                    <a asp-controller="Reservation" asp-action="Details" asp-route-id="@reservation.Id">Details</a> |
-                    <a asp-controller="Reservation" asp-action="Edit" asp-route-id="@reservation.Id">Edit</a> |
-                    <a asp-controller="Reservation" asp-action="Delete" asp-route-id="@reservation.Id">Delete</a>
+                    <a asp-controller="Reservation" asp-action="Details" asp-route-id="@rezervacija.Id" class="btn btn-info">Podrobnosti</a> |
+                    <a asp-controller="Reservation" asp-action="Edit" asp-route-id="@rezervacija.Id" class="btn btn-warning">Uredi</a> |
+                    <a asp-controller="Reservation" asp-action="Delete" asp-route-id="@rezervacija.Id" class="btn btn-danger">Izbriši</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-<a asp-controller="Reservation" asp-action="Create">Add New Reservation</a>
+<a asp-controller="Reservation" asp-action="Create" class="btn btn-primary">Dodaj novo rezervacijo</a>

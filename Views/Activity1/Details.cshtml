@@ -1,11 +1,15 @@
 @model EFitness.Models.Activity1
 
-<h2>Activity Details</h2>
+<h2>Podrobnosti aktivnosti</h2>
 
-<div>
-    <p><strong>Name:</strong> @Model.Name</p>
-    <p><strong>Description:</strong> @Model.Description</p>
-    <p><strong>Schedule:</strong> @Model.Schedule.ToString("g")</p>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text"><strong>Opis:</strong> @Model.Description</p>
+        <p class="card-text"><strong>Urnik:</strong> @Model.Schedule</p>
+    </div>
 </div>
 
-<a asp-action="Index">Back to List</a>
+<a asp-controller="Activities" asp-action="Index" class="btn btn-secondary">Nazaj na seznam</a>
+<a asp-controller="Activities" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Uredi</a>
+<a asp-controller="Activities" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Izbriši</a>
