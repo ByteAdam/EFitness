@@ -1,0 +1,21 @@
+@model EFitness.Models.Reservation
+
+<h2>Edit Reservation</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Member</label>
+        <select asp-for="MemberId" asp-items="@(new SelectList(ViewData["Members"] as List<EFitness.Models.Member>, "Id", "FullName"))"></select>
+    </div>
+    <div>
+        <label>Activity</label>
+        <select asp-for="ActivityId" asp-items="@(new SelectList(ViewData["Activities"] as List<EFitness.Models.Activity1>, "Id", "Name"))"></select>
+    </div>
+    <div>
+        <label>Date</label>
+        <input asp-for="Date" type="datetime-local" />
+    </div>
+    <button type="submit">Save</button>
+</form>
+<a asp-action="Index">Back to List</a>

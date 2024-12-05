@@ -1,0 +1,27 @@
+@model IEnumerable<EFitness.Models.Instructor>
+
+<h2>Instructors</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Expertise</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var instructor in Model)
+        {
+            <tr>
+                <td>@instructor.FullName</td>
+                <td>@instructor.Expertise</td>
+                <td>
+                    <a asp-controller="Instructors" asp-action="Details" asp-route-id="@instructor.Id">Details</a> |
+                    <a asp-controller="Instructors" asp-action="Edit" asp-route-id="@instructor.Id">Edit</a> |
+                    <a asp-controller="Instructors" asp-action="Delete" asp-route-id="@instructor.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-controller="Instructors" asp-action="Create">Add New Instructor</a>

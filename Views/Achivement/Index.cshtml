@@ -1,0 +1,29 @@
+@model IEnumerable<EFitness.Models.Achievement>
+
+<h2>Achievements</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Member</th>
+            <th>Description</th>
+            <th>Date Achieved</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var achievement in Model)
+        {
+            <tr>
+                <td>@achievement.Member.FullName</td>
+                <td>@achievement.Description</td>
+                <td>@achievement.DateAchieved.ToString("d")</td>
+                <td>
+                    <a asp-controller="Achievements" asp-action="Details" asp-route-id="@achievement.Id">Details</a> |
+                    <a asp-controller="Achievements" asp-action="Edit" asp-route-id="@achievement.Id">Edit</a> |
+                    <a asp-controller="Achievements" asp-action="Delete" asp-route-id="@achievement.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-controller="Achievements" asp-action="Create">Add New Achievement</a>

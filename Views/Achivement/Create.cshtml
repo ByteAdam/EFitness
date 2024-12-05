@@ -1,0 +1,20 @@
+@model EFitness.Models.Achievement
+
+<h2>Create Achievement</h2>
+
+<form asp-action="Create">
+    <div>
+        <label>Member ID</label>
+        <input asp-for="MemberId" />
+    </div>
+    <div>
+        <label>Description</label>
+        <input asp-for="Description" />
+    </div>
+    <div>
+        <label>Date Achieved</label>
+        <input asp-for="DateAchieved" type="date" />
+    </div>
+    <button type="submit">Create</button>
+</form>
+<a asp-action="Index">Back to List</a>

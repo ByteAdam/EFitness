@@ -1,0 +1,11 @@
+@model EFitness.Models.Reservation
+
+<h2>Reservation Details</h2>
+
+<div>
+    <p><strong>Member:</strong> @Model.Member.FullName</p>
+    <p><strong>Activity:</strong> @Model.Activity1.Name</p>
+    <p><strong>Date:</strong> @Model.Date.ToString("g")</p>
+</div>
+
+<a asp-action="Index">Back to List</a>

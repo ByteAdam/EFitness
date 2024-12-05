@@ -1,0 +1,11 @@
+@model EFitness.Models.Activity1
+
+<h2>Activity Details</h2>
+
+<div>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Schedule:</strong> @Model.Schedule.ToString("g")</p>
+</div>
+
+<a asp-action="Index">Back to List</a>

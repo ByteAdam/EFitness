@@ -1,0 +1,17 @@
+@model EFitness.Models.Instructor
+
+<h2>Edit Instructor</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Full Name</label>
+        <input asp-for="FullName" />
+    </div>
+    <div>
+        <label>Expertise</label>
+        <input asp-for="Expertise" />
+    </div>
+    <button type="submit">Save</button>
+</form>
+<a asp-action="Index">Back to List</a>

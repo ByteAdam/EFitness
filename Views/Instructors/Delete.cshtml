@@ -1,0 +1,17 @@
+@model EFitness.Models.Reservation
+
+<h2>Delete Reservation</h2>
+
+<p>Are you sure you want to delete this reservation?</p>
+<div>
+    <p><strong>Member:</strong> @Model.Member.FullName</p>
+    <p><strong>Activity:</strong> @Model.Activity1.Name</p>
+    <p><strong>Date:</strong> @Model.Date.ToString("g")</p>
+</div>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+</form>
+
+<a asp-action="Index">Back to List</a>

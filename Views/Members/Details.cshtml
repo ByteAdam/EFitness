@@ -1,0 +1,12 @@
+@model EFitness.Models.Member
+
+<h2>Member Details</h2>
+
+<div>
+    <p><strong>Full Name:</strong> @Model.FullName</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Phone:</strong> @Model.Phone</p>
+    <p><strong>Goals:</strong> @Model.Goals</p>
+</div>
+
+<a asp-action="Index">Back to List</a>
