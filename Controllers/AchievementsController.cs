@@ -13,10 +13,12 @@ public class AchievementsController : Controller
         _context = context;
     }
 
-    public IActionResult Index()
-    {
-        return View(_context.Achievements.ToList());
-    }
+   public IActionResult Index()
+{
+    var achievements = _context.Achievements.ToList();
+    return View(achievements); // Ensure the 'Index.cshtml' matches this call
+}
+
 
     public IActionResult Details(int id)
     {

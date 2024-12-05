@@ -266,3 +266,4 @@ C:\Users\Adam\Desktop\is\EFitness\obj\Debug\net8.0\refint\EFitness.dll
 C:\Users\Adam\Desktop\is\EFitness\obj\Debug\net8.0\EFitness.pdb
 C:\Users\Adam\Desktop\is\EFitness\obj\Debug\net8.0\EFitness.genruntimeconfig.cache
 C:\Users\Adam\Desktop\is\EFitness\obj\Debug\net8.0\ref\EFitness.dll
+C:\Users\Adam\Desktop\is\EFitness\obj\Debug\net8.0\EFitness.sourcelink.json

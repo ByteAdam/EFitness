@@ -14,15 +14,27 @@ public class ReservationController : Controller
         _context = context;
     }
 
-    public IActionResult Index()
-    {
-        var reservations = _context.Reservations
-            .Include(r => r.Member)
-            .Include(r => r.Activity1) // Correct navigation property
-            .ToList();
+ 
+public IActionResult Index()
+{
+    var reservations = _context.Reservations
+        .Include(r => r.Member)
+        .Include(r => r.Activity1)
+        .ToList();
 
-        return View(reservations);
+    if (reservations is List<Reservation>)
+    {
+        Console.WriteLine("Model type is correct.");
     }
+    else
+    {
+        Console.WriteLine("Model type mismatch.");
+    }
+
+    return View(reservations);
+}
+
+
 
     public IActionResult Details(int id)
     {

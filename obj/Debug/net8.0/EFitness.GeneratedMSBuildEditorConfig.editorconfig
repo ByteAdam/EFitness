@@ -186,24 +186,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Adam/Desktop/is/EFitness/Views/Achivement/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaXZlbWVudFxDcmVhdGUuY3NodG1s
+[C:/Users/Adam/Desktop/is/EFitness/Views/Achievements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Adam/Desktop/is/EFitness/Views/Achivement/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaXZlbWVudFxEZWxldGUuY3NodG1s
+[C:/Users/Adam/Desktop/is/EFitness/Views/Achievements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Adam/Desktop/is/EFitness/Views/Achivement/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaXZlbWVudFxEZXRhaWxzLmNzaHRtbA==
+[C:/Users/Adam/Desktop/is/EFitness/Views/Achievements/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Adam/Desktop/is/EFitness/Views/Achivement/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaXZlbWVudFxFZGl0LmNzaHRtbA==
+[C:/Users/Adam/Desktop/is/EFitness/Views/Achievements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Adam/Desktop/is/EFitness/Views/Achivement/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaXZlbWVudFxJbmRleC5jc2h0bWw=
+[C:/Users/Adam/Desktop/is/EFitness/Views/Achievements/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Adam/Desktop/is/EFitness/Views/Activity1/Create.cshtml]

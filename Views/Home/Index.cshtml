@@ -1,8 +1,59 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "E-Fitness Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+    <h1 class="text-center">Dobrodošli v E-Fitness</h1>
+    <p class="text-center">Upravljajte svoj fitnes center digitalno in učinkovito.</p>
+
+    <div class="row text-center mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Člani</h5>
+                    <p class="card-text">Ustvarite, urejajte ali pregledujte člane fitnesa.</p>
+                    <a href="/Members" class="btn btn-primary">Upravljaj člane</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Inštruktorji</h5>
+                    <p class="card-text">Pregledujte in upravljajte inštruktorje fitnesa.</p>
+                    <a href="/Instructors" class="btn btn-primary">Upravljaj inštruktorje</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Vadbe</h5>
+                    <p class="card-text">Upravljajte urnike in vadbene programe.</p>
+                    <a href="/Activity1" class="btn btn-primary">Upravljaj vadbe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Dosežki</h5>
+                    <p class="card-text">Spremljajte dosežke članov.</p>
+                    <a href="/Achievements" class="btn btn-success">Upravljaj dosežke</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Rezervacije</h5>
+                    <p class="card-text">Pregledujte in urejajte rezervacije terminov.</p>
+                    <a href="/Reservation" class="btn btn-success">Upravljaj rezervacije</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
