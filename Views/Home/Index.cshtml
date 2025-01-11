@@ -2,58 +2,85 @@
     ViewData["Title"] = "E-Fitness Home";
 }
 
-<div class="container mt-4">
-    <h1 class="text-center">Dobrodošli v E-Fitness</h1>
-    <p class="text-center">Upravljajte svoj fitnes center digitalno in učinkovito.</p>
+<div class="container mt-5">
+    <h1 class="text-center display-4 mb-4">Dobrodošli v E-Fitness</h1>
+    <p class="text-center lead">Upravljajte svoj fitnes center digitalno in učinkovito.</p>
 
     <div class="row text-center mt-5">
+        <!-- Members Section -->
         <div class="col-md-4">
-            <div class="card">
+            <div class="card shadow-sm h-100">
                 <div class="card-body">
                     <h5 class="card-title">Člani</h5>
                     <p class="card-text">Ustvarite, urejajte ali pregledujte člane fitnesa.</p>
-                    <a href="/Members" class="btn btn-primary">Upravljaj člane</a>
+                    <a href="/Members" class="btn btn-primary btn-block">Upravljaj člane</a>
                 </div>
             </div>
         </div>
+
+        <!-- Instructors Section -->
         <div class="col-md-4">
-            <div class="card">
+            <div class="card shadow-sm h-100">
                 <div class="card-body">
                     <h5 class="card-title">Inštruktorji</h5>
                     <p class="card-text">Pregledujte in upravljajte inštruktorje fitnesa.</p>
-                    <a href="/Instructors" class="btn btn-primary">Upravljaj inštruktorje</a>
+                    <a href="/Instructors" class="btn btn-primary btn-block">Upravljaj inštruktorje</a>
                 </div>
             </div>
         </div>
+
+        <!-- Activities Section -->
         <div class="col-md-4">
-            <div class="card">
+            <div class="card shadow-sm h-100">
                 <div class="card-body">
                     <h5 class="card-title">Aktivnosti</h5>
                     <p class="card-text">Upravljajte urnike in vadbene programe.</p>
-                    <a href="/Activity1" class="btn btn-primary">Upravljaj vadbe</a>
+                    <a href="/Activity1" class="btn btn-primary btn-block">Upravljaj vadbe</a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="row text-center mt-4">
+        <!-- Achievements Section -->
         <div class="col-md-6">
-            <div class="card">
+            <div class="card shadow-sm h-100">
                 <div class="card-body">
                     <h5 class="card-title">Dosežki</h5>
                     <p class="card-text">Spremljajte dosežke članov.</p>
-                    <a href="/Achievements" class="btn btn-success">Upravljaj dosežke</a>
+                    <a href="/Achievements" class="btn btn-success btn-block">Upravljaj dosežke</a>
                 </div>
             </div>
         </div>
+
+        <!-- Reservations Section -->
         <div class="col-md-6">
-            <div class="card">
+            <div class="card shadow-sm h-100">
                 <div class="card-body">
                     <h5 class="card-title">Rezervacije</h5>
                     <p class="card-text">Pregledujte in urejajte rezervacije terminov.</p>
-                    <a href="/Reservation" class="btn btn-success">Upravljaj rezervacije</a>
+                    <a href="/Reservation" class="btn btn-success btn-block">Upravljaj rezervacije</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+    /* Add some padding to prevent text from touching the edges */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Card hover effect */
+    .card:hover {
+        transform: scale(1.03);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    /* Button hover effect */
+    .btn:hover {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+</style>
