@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net8.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/5c39ad60-c69a-44a8-9c19-b309ad47253d/resourceGroups/efitness-app_group/providers/Microsoft.Web/sites/efitness-app"
+}
