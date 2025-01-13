@@ -1,16 +1,11 @@
 # E-Fitness Projekt
 
-**Avtor:**  
-- **Adam Bajt** (vpisna številka: 63210380)
-
----
-
 ## 1. Opis projekta
 
 **E-Fitness** je celovit sistem za upravljanje fitnes storitev. Sestavljen je iz:
 - **Spletne aplikacije** (ASP.NET Core) za vodenje članov, aktivnosti, rezervacij, dosežkov in še več.
-- **API** (v kolikor je potreben) ali integriranih kontrolerjev, ki omogočajo komunikacijo s podatkovno bazo.
-- **(Neobvezno) Mobilna aplikacija**, ki lahko prikazuje podatke in omogoča interakcijo z vodenim fitnes sistemom.
+- **API** ki omogoča komunikacijo s podatkovno bazo.
+- **Mobilna aplikacija**, ki lahko prikazuje podatke in omogoča interakcijo z vodenim fitnes sistemom.
 
 Cilj projekta je zagotoviti enostavno upravljanje fitnes centra, kjer lahko skrbniki:
 - dodajajo in urejajo člane (člani imajo ime, priimek, cilje, ipd.),
@@ -19,6 +14,10 @@ Cilj projekta je zagotoviti enostavno upravljanje fitnes centra, kjer lahko skrb
 - beležijo dosežke (npr. osebni rekordi, nagrade).
 
 Vsa funkcionalnost je dostopna prek prijave. Neavtorizirani uporabniki nimajo dostopa do urejanja podatkov.
+Povezava do webappa: https://efitness-app-bca6g5cqewb7h7cj.northeurope-01.azurewebsites.net/
+Povezava do API: http://89.143.35.164:5256/index.html (ni na Azuru, ker me Azure ne mara) - Je na mojem lastnem računalniku.
+Aplikacijo si lahko namestite iz app/release/EFitnessApp.apk datoteke na svojem telefonu.
+API je kljub localhostingu povezan na bazo podatkov v azuru. Aplikacija uporablja API.
 
 ---
 
@@ -39,14 +38,14 @@ Spodaj je nekaj zaslonskih slik iz **spletne aplikacije** in **mobilne aplikacij
 ### 3.2 Zaslonska slika API
 ![Swagger](./screenshots/api.png)
 
-### 3.3 Primer zaslonske slike (rezervacije)
+### 3.3 Zaslonska slika rezervacij
 ![Rezervacije](./screenshots/rezervacije.png)
 
 ### 3.4 Zaslonska slika mobilne aplikacije
 ![Aplikacija](./screenshots/app.png)
 
-### 3.5 Primer zaslonske slike (prijavni zaslon)
-![Prijava](./screenshots/login.png)
+### 3.5 Zaslonska slika inštruktorjev
+![Inštruktorji](./screenshots/instruktorji.png)
 
 
 
@@ -82,7 +81,7 @@ Ker sem bil edini avtor projekta, sem opravil vse naloge:
 
 Spodaj je slika podatkovnega modela (ERD) iz orodja SSMS ali drugega orodja:
 
-![Diagram podatkovne baze](./screenshots/db-diagram.png)
+![Diagram podatkovne baze](./screenshots/diagram.png)
 
 **Opis:**
 - **Member**: Tabelarično shranjuje člane (Id, FullName, Email, Phone, Goals).
