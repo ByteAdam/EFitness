@@ -29,26 +29,26 @@ Vsa funkcionalnost je dostopna prek prijave. Neavtorizirani uporabniki nimajo do
 
 ---
 
-## 3. Zaslonske slike (približno 5)
+## 3. Zaslonske slike
 
-Spodaj je nekaj zaslonskih slik iz **spletne aplikacije** in/ali **mobilne aplikacije** (če je bila razvita) za predstavitev uporabniškega vmesnika.
+Spodaj je nekaj zaslonskih slik iz **spletne aplikacije** in **mobilne aplikacije** za predstavitev uporabniškega vmesnika.
 
-### 3.1 Primer zaslonske slike (seznam članov)
-![Seznam članov](./screenshots/clani.png)
+### 3.1 Zaslonska slika spletne aplikacije
+![Webapp](./screenshots/webapp.png)
 
-### 3.2 Primer zaslonske slike (dodajanje aktivnosti)
-![Dodajanje aktivnosti](./screenshots/aktivnost.png)
+### 3.2 Zaslonska slika API
+![Swagger](./screenshots/api.png)
 
 ### 3.3 Primer zaslonske slike (rezervacije)
 ![Rezervacije](./screenshots/rezervacije.png)
 
-### 3.4 Primer zaslonske slike (dosežki – mobilna ali web)
-![Dosežki](./screenshots/dosezki.png)
+### 3.4 Zaslonska slika mobilne aplikacije
+![Aplikacija](./screenshots/app.png)
 
 ### 3.5 Primer zaslonske slike (prijavni zaslon)
 ![Prijava](./screenshots/login.png)
 
-*(Opomba: Potrebno je dejansko zamenjati slike ali poti do slik z vašimi.)*
+
 
 ---
 
