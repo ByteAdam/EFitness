@@ -13,11 +13,11 @@ Cilj projekta je zagotoviti enostavno upravljanje fitnes centra, kjer lahko skrb
 - vodijo rezervacije (termini, razpoložljivost),
 - beležijo dosežke (npr. osebni rekordi, nagrade).
 
-Vsa funkcionalnost je dostopna prek prijave. Neavtorizirani uporabniki nimajo dostopa do urejanja podatkov.
-Povezava do webappa: https://efitness-app-bca6g5cqewb7h7cj.northeurope-01.azurewebsites.net/
-Povezava do API: http://89.143.35.164:5256/index.html (ni na Azuru, ker me Azure ne mara) - Je na mojem lastnem računalniku.
-Aplikacijo si lahko namestite iz app/release/EFitnessApp.apk datoteke na svojem telefonu.
-API je kljub localhostingu povezan na bazo podatkov v azuru. Aplikacija uporablja API.
+<br>Vsa funkcionalnost je dostopna prek prijave. Neavtorizirani uporabniki nimajo dostopa do urejanja podatkov. 
+<br>Povezava do webappa: https://efitness-app-bca6g5cqewb7h7cj.northeurope-01.azurewebsites.net/ 
+<br>Povezava do API: http://89.143.35.164:5256/index.html (ni na Azuru, ker me Azure ne mara) - Je na mojem lastnem računalniku.
+<br>Aplikacijo si lahko namestite iz app/release/EFitnessApp.apk datoteke na svojem telefonu.
+<br>API je kljub localhostingu povezan na bazo podatkov v azuru. Aplikacija uporablja API.
 
 ---
 
