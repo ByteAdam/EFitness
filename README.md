@@ -1,4 +1,4 @@
-# E-Fitness Projekt
+# E-Fitness
 
 ## 1. Opis projekta
 
@@ -71,7 +71,7 @@ Ker sem bil edini avtor projekta, sem opravil vse naloge:
 - **Implementacija podatkovnega modela** (člani, aktivnosti, rezervacije, dosežki, …),
 - **Izdelava API-ja / kontrolerjev** za pregled in urejanje podatkov,
 - **Implementacija varnosti in pristopa** (prijava, odjava, avtentikacija z Identity),
-- **UI in UX**: Spletni vmesnik (Razor Pages / MVC) in/ali mobilni vmesnik,
+- **UI in UX**: Spletni vmesnik (Razor Pages / MVC) in mobilni vmesnik,
 - **Povezava z bazo** s pomočjo Entity Framework in inicializacija podatkov (seme),
 - **Testiranje** (preverjanje delovanja funkcionalnosti in odpravljanje napak).
 
